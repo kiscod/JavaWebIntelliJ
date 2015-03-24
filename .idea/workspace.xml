@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ccf79426-0535-4ce0-80e6-e3524f689400" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JavaWebIntelliJ_war_exploded/dologin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JavaWebIntelliJ_war_exploded/dologin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dologin.jsp" afterPath="$PROJECT_DIR$/web/dologin.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JavaWebIntelliJ_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JavaWebIntelliJ_war_exploded/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/users.jsp" afterPath="$PROJECT_DIR$/web/users.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaWebIntelliJ.iws" />
@@ -99,8 +96,8 @@
       <file leaf-file-name="UsersDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dao/UsersDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10018553" vertical-offset="0" max-vertical-offset="539">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4007421" vertical-offset="0" max-vertical-offset="539">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -661,7 +658,7 @@
       <workItem from="1426904586541" duration="2904000" />
       <workItem from="1426908188591" duration="6190000" />
       <workItem from="1426915907823" duration="6797000" />
-      <workItem from="1427166650396" duration="6029000" />
+      <workItem from="1427166650396" duration="6054000" />
     </task>
     <task id="LOCAL-00001" summary="index.jsp 改变测试">
       <created>1426908258328</created>
@@ -693,11 +690,17 @@
       <option name="project" value="LOCAL" />
       <updated>1427180200076</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="使用Cookie实现  记住登录状态">
+      <created>1427181110553</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1427181110553</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21920000" />
+    <option name="totallyTimeSpent" value="21945000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -953,8 +956,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dao/UsersDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10018553" vertical-offset="0" max-vertical-offset="539">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4007421" vertical-offset="0" max-vertical-offset="539">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding />
         </state>
       </provider>
