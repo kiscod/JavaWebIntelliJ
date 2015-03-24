@@ -1,3 +1,4 @@
+<%@ page import="java.net.URLDecoder" %>
 <%--
     /**
  * Created with IntelliJ IDEA.
@@ -18,16 +19,17 @@
         <h1>用户信息</h1>
         <hr>
         <%
+            request.setCharacterEncoding("utf-8");
             String username = "";
             String password = "";
             Cookie[] cookies = request.getCookies();
             if(cookies!= null && cookies.length >0){
                 for (Cookie cookie : cookies) {
                     if(cookie.getName().equals("username")){
-                        username = cookie.getValue();
+                        username = URLDecoder.decode(cookie.getValue(), "utf-8");
                     }
                     if(cookie.getName().equals("password")){
-                        password = cookie.getValue();
+                        password = URLDecoder.decode(cookie.getValue(), "utf-8");
                     }
                 }
             }

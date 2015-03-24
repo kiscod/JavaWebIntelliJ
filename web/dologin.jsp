@@ -7,7 +7,7 @@
  * Project: JavaWebIntelliJ
  */
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.net.*" %>
 
 <%--<jsp:useBean id="loginUser" class="com.po.Users" scope="page"/>--%>
 <%--<jsp:useBean id="userDAO" class="com.dao.UsersDAO" scope="page"/>--%>
@@ -35,11 +35,18 @@
         <br>
         <br>
         <%
+            request.setCharacterEncoding("utf-8");
             //首先判断用户是否选择了记住
             String[] isUseCookie = request.getParameterValues("isUseCookie");
             if(isUseCookie!= null && isUseCookie.length > 0){
-                String username = request.getParameter("username");
-                String password = request.getParameter("password");
+
+                /**
+                 * 对中文进行处理 URLEncoder.encode(username, "")
+                 * 不处理的话，中文字符串无法在Cookie保存处理 会导致报错
+                 */
+                String username = URLEncoder.encode(request.getParameter("username"), "utf-8");
+                String password = URLEncoder.encode(request.getParameter("password"), "utf-8");
+
                 Cookie usernameCookie = new Cookie("username", username);
                 Cookie passwordCookie = new Cookie("password", password);
                 usernameCookie.setMaxAge(864000);//设置最大生存期限为10天

@@ -7,7 +7,7 @@
  * Project: JavaWebIntelliJ
  */
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.net.*"  %>
 
 <html>
 <head>
@@ -40,10 +40,10 @@
             if(cookies!= null && cookies.length >0){
                 for (Cookie cookie : cookies) {
                     if(cookie.getName().equals("username")){
-                        username = cookie.getValue();
+                        username = URLDecoder.decode(cookie.getValue(), "utf-8");
                     }
                     if(cookie.getName().equals("password")){
-                        password = cookie.getValue();
+                        password = URLDecoder.decode(cookie.getValue(), "utf-8");
                     }
                 }
             }
