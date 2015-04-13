@@ -49,7 +49,7 @@
             }
         %>
 
-        <form name="loginForm"  action="dologin.jsp"    method="post">
+        <form name="loginForm"  action="forward_action.jsp"    method="post">
             <table>
                 <tr>
                     <td>用户名：</td>
